@@ -3,16 +3,25 @@
 set -eu
 
 ARCH=$(uname -m)
-VERSION=$(pacman -Q PACKAGENAME | awk '{print $2; exit}') # example command to get version of application here
+VERSION=$(wget -qO- https://api.github.com/repos/Youda008/DoomRunner/releases/latest | awk '{print $2; exit}') # example command to get version of application here
 export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
-export ICON=PATH_OR_URL_TO_ICON
-export DESKTOP=PATH_OR_URL_TO_DESKTOP_ENTRY
+export ICON=/usr/share/icons/hicolor/128x128/apps/DoomRunner.png
+export DESKTOP=/usr/share/applications/DoomRunner.desktop
+export DEPLOY_OPENGL=1
+export DEPLOY_VULKAN=1
 
 # Deploy dependencies
-quick-sharun /PATH/TO/BINARY_AND_LIBRARIES_HERE
+quick-sharun ./AppDir/bin/DoomRunner \
+  /usr/lib/qt6/plugins/platformthemes/libqt6ct.so \
+  /usr/lib/qt6/plugins/platformthemes/libqtlxqt.so \
+  /usr/lib/qt6/plugins/styles/libkvantum.so \
+  /usr/lib/libpipewire-0.*.so
+  
+echo 'ALSOFT_DRIVERS=alsa' >> ./AppDir/.env
+echo 'SDL_AUDIODRIVER=alsa' >> ./AppDir/.env
 
 # Additional changes can be done in between here
 
