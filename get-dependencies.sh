@@ -11,6 +11,7 @@ pacman -Syu --noconfirm minizip \
    kvantum \
    qt6ct \
    lxqt-qtplugin \
+   pipwire
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
