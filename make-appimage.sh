@@ -19,9 +19,6 @@ quick-sharun /usr/bin/DoomRunner \
   /usr/lib/qt6/plugins/platformthemes/libqtlxqt.so \
   /usr/lib/qt6/plugins/styles/libkvantum.so \
   /usr/lib/libpipewire-0.*.so
-  
-echo 'ALSOFT_DRIVERS=alsa' >> ./AppDir/.env
-echo 'SDL_AUDIODRIVER=alsa' >> ./AppDir/.env
 
 # Additional changes can be done in between here
 
