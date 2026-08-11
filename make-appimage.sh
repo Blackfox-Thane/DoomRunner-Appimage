@@ -14,7 +14,7 @@ export DEPLOY_OPENGL=1
 export DEPLOY_VULKAN=1
 
 # Deploy dependencies
-quick-sharun ./AppDir/bin/DoomRunner \
+quick-sharun /usr/bin/DoomRunner \
   /usr/lib/qt6/plugins/platformthemes/libqt6ct.so \
   /usr/lib/qt6/plugins/platformthemes/libqtlxqt.so \
   /usr/lib/qt6/plugins/styles/libkvantum.so \
