@@ -14,9 +14,9 @@ export DEPLOY_VULKAN=1
 
 # Deploy dependencies
 quick-sharun /usr/bin/DoomRunner
-#  /usr/lib/qt6/plugins/platformthemes/libqt6ct.so \
-#  /usr/lib/qt6/plugins/platformthemes/libqtlxqt.so \
-#  /usr/lib/qt6/plugins/styles/libkvantum.so \
+  /usr/lib/qt6/plugins/platformthemes/libqt6ct.so \
+  /usr/lib/qt6/plugins/platformthemes/libqtlxqt.so \
+  /usr/lib/qt6/plugins/styles/libkvantum.so
 #  /usr/lib/libpipewire-0.*.so
 
 # Additional changes can be done in between here
