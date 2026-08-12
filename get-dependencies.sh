@@ -13,7 +13,7 @@ echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
-make-aur-package --chaotic-aur doomrunner
+make-aur-package doomrunner
 
 # If the application needs to be manually built that has to be done down here
 
