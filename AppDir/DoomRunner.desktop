@@ -1,0 +1,14 @@
+[Desktop Entry]
+StartupWMClass=DoomRunner
+Name=Doom Runner
+Comment=Preset-oriented graphical launcher of various ported Doom engines
+Exec=DoomRunner
+Icon=DoomRunner
+Type=Application
+Categories=Game
+X-Desktop-File-Install-Version=0.26
+Keywords=first;person;shooter;launcher;
+StartupNotify=true
+X-AppImage-Name=Doom_Runner
+X-AppImage-Version=v1.9.2
+X-AppImage-Arch=x86_64
