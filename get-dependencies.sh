@@ -6,12 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm minizip \
-   qt6-base \
-   kvantum \
-   qt6ct \
-   lxqt-qtplugin \
-   pipwire
+pacman -Syu --noconfirm minizip
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
