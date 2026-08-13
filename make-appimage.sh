@@ -14,9 +14,9 @@ export ICON=/usr/share/icons/hicolor/128x128/apps/DoomRunner.png
 
 # Deploy dependencies
 quick-sharun /usr/bin/DoomRunner
-#  /usr/lib/qt6/plugins/platformthemes/libqt6ct.so \
-#  /usr/lib/qt6/plugins/platformthemes/libqtlxqt.so \
-#  /usr/lib/qt6/plugins/styles/libkvantum.so
+  /usr/lib/qt6/plugins/platformthemes/libqt6ct.so \
+  /usr/lib/qt6/plugins/platformthemes/libqtlxqt.so \
+  /usr/lib/qt6/plugins/styles/libkvantum.so
 
 # Additional changes can be done in between here
 
